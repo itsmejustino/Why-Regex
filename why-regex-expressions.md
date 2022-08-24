@@ -6,7 +6,7 @@ As a programmer there is a high likelihood you have tried searching through code
 
 ## Summary
 
-A great example of a regex statement in real world application is finding or searching for a zip code. The regex offers the specific search. This is the regex statement doing our search. ```^\d{5}(?:[-\s]\d{4})?$``` . This statement is acting upon each component of the statement that we are searching with our regex statement. Each form of the syntax  ```^d{5}(?:[-\s]\d{4})?$```.
+A great example of a regex statement in real world application is finding or searching for a zip code. The regex offers the specific search. This is the regex statement doing our search. ```^\d{5}(?:[-\s]\d{4})?$``` . This statement is acting upon each argument that we are searching with within our regex statement. This statement will take in a string of decimals that is 5 characters long and accepts white space separated in a character set along with 4 more decimal characters.  We will take a deeper dive into the above example and break it down to understand what the purpose is and how to use regex statements.
 
 ## Table of Contents
 
@@ -22,9 +22,9 @@ A great example of a regex statement in real world application is finding or sea
 ## Regex Components
 
 ### Anchors
-
+  Anchors are an example of the binding argument within the regex statement that refers to a position. It would be logical to think that each argument would point to a specific letter, number and symbol but it instead points to a specific position within a grouping of text, character, or character class. In our example  ```^\d{5}(?:[-\s]\d{4})?$``` we specify that the first character in the text will be a decimal with this expression  ```^\d```. The```\d``` in the expression signifies to look for decimal value at the beginning of the string while the ```^```says to match the input at the beginning of the string. Both of these are essentially doing a similar pattern and offers a double check within the expression.
 ### Quantifiers
-
+Now that we know what kind of argument we can pass into a regex expression to define a specific position our next component in this expression is ```^\d{5}(?:[-\s]\d{4})?$``` identifying how many characters we would like to search for. If you have ever shopped on Amazon and filtered a search for certain material the way in which we can filter this data is very similar to a regex expression. We can now filter by amount and position of each character. These quantifiers can be identified by following the anchor tag. In this expression we are limiting the decimal characters to 5 and 4 with ```{5}``` and ```{4}```. This is telling the regex statement to only look for characters passed in to be a length of 5 or 4 characters separated by white space with the - symbol. 
 ### Grouping Constructs
 
 ### Bracket Expressions
